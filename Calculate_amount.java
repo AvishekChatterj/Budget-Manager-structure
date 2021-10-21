@@ -9,7 +9,7 @@ public class Calculate_amount
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter your budget: ");
 		int budget=sc.nextInt();
-		System.out.println("Enter the amout spent on: ");
+		System.out.println("Enter the amount spent on: ");
 		System.out.println("Food: ");
 		int food=sc.nextInt();
 		System.out.println("Toiletries: ");
