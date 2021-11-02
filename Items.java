@@ -1,10 +1,7 @@
 package budget_manager;
-interface Items
+interface Item
 {
 	int amount=0;
+	public int getAmount();
+	public void setAmount(int amount);
 }
-	enum Items_Labels
-	{
-		FOOD, TOILETRIES, LUXUXRY, ENTERTAINMENT, NECCESITY, 
-		HOBBIES, OTHERS
-	}

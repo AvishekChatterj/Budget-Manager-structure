@@ -1,13 +1,13 @@
 package budget_manager;
 
-public class Entertainment implements Items 
+public class Entertainment implements Item
 {
 	private int amount=0;
-
+	@Override
 	public int getAmount() {
 		return amount;
 	}
-
+	@Override
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
