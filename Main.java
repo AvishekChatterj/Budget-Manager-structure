@@ -12,9 +12,9 @@ public class Main
 		System.out.println("*--------WELCOME---------*");
 		try
 		{
+			System.out.print("Currrent Budget : "+totalBudget);
 		while(true)
 		{
-			System.out.print("Currrent Budget : "+totalBudget);
 			System.out.println("\nPress 1 to Record a Expense");
 			System.out.println("Press 2 update Budget");
 			System.out.println("Press 3 to see the Expense Status");
@@ -38,8 +38,13 @@ public class Main
 				System.out.print("Enter the amount to be added:  ");
 				if(scanner.hasNextInt())
 				{
-					Budget budget=new Budget();
-					totalBudget=budget.updateBudget(totalBudget,scanner.nextInt());
+					int addedBudget=scanner.nextInt();
+					if(Utilities.getValidation(addedBudget, addedBudget))
+					{
+						Budget budget=new Budget();
+						totalBudget=budget.updateBudget(totalBudget,addedBudget);
+						System.out.print("Currrent Budget : "+totalBudget);
+					}
 				}
 				break;
 			case 3:
